@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoT Board Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/public/board-stylesheet.css">
+    <script src="https://kit.fontawesome.com/6f910e69ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html"><i class="fas fa-arrow-circle-left"></i> Back to Home Page</a>
+        </li>
+    </ul>
+
+    <div class="container-fluid">
+        <h1>Conquer Westeros and reach the Iron Throne!</h1>
+
+        <!-- BOARD -->
+        <div id="boardContainer1"></div>
+        <div id="boardContainer2"></div>
+        <div id="boardContainer3"></div>
+        <div id="boardContainer4"></div>
+        <div id="boardContainer5"></div>
+
+        <!-- DICE ROLLER -->
+        <div id="diceRoller">
+            <div class="row justify-content-center">
+                <!-- CHARACTER TOKEN -->
+                <div id="characterToken"></div>
+                <div class="diceContainer">
+                    <!-- will be replaced after rolling dice -->
+                    <p id="diceNumber"></p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <p class="lead" id="diceAlert"></p>
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-primary btn-lg glow-button" id="rollerButton">Roll Dice!</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <small>Copyright © 2019 • Bryan Luis Villafuerte • Semester Project</small>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+
+
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/board-script.js" type="text/javascript"></script>
+
+</body>
+</html>

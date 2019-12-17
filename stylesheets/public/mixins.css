@@ -1,0 +1,12 @@
+@keyframes neonGlow {
+  0%, 100% {
+    text-shadow: 0 0 0.5vw #DC832E, 0 0 1.5vw #BF2424, 0 0 5vw #BF2424, 0 0 5vw #BF2424, 0 0 0.2vw #DC832E, 0.25vw 0.25vw 0.05vw #806914;
+    color: #DC832E;
+  }
+  50% {
+    text-shadow: 0 0 0.25vw #800E0B, 0 0 0.75vw #800E0B, 0 0 2.5vw #800E0B, 0 0 2.5vw #800E0B, 0 0 0.1vw #800E0B, 0.25vw 0.25vw 0.05vw #40340A;
+    color: #806914;
+  }
+}
+
+/*# sourceMappingURL=mixins.css.map */

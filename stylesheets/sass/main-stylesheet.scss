@@ -1,0 +1,129 @@
+@import "fonts";
+@import "colors";
+@import "mixins";
+
+body {
+    background-color: $backgroundColorMain;
+    color: $lightText;
+}
+
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    background-color: $black;
+    height: auto;
+    margin-bottom: 0;
+
+    video {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /*  object-fit is not supported on IE  */
+        object-fit: cover;
+        opacity: 0.4;
+    }
+
+    .container {
+        z-index: 2;
+        position: relative;
+
+        h1 {
+            text-align: center;
+            color: $orange;
+            background: linear-gradient(to right, $orange 0%, $red 100%);
+	        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: neonGlow 2s infinite alternate $easeInOutQuad;
+        }
+
+        .lead {
+            text-align: center;
+        }
+
+        .quote {
+            font-style: italic;
+        }
+
+        .author {
+            text-align: right;
+        }
+
+        .logo {
+            width: 100%;
+            background-color: rgb(255, 255, 255, .3);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.container-fluid {
+    background-color: $backgroundColorMain;
+    background-image: url(/assets/night-king-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    .characters {
+        h2 {
+            color: $orange;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .col-md-3 {
+            margin-bottom: 30px;
+        }
+    
+        .card {
+            background-color: $backgroundColorMain;
+            border: 1px solid $darkGrey;
+            border-radius: 10px;
+            box-shadow: 0px 10px 10px #303030;
+
+            .card-img-top {
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            .card-title {
+                color: $orange;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow:
+                0 0 3px 1px #fff,
+                0 0 6px 3px $red,
+                0 0 9px 5px $orange;
+            }
+        }
+
+        .btn-lg {
+            justify-content: center;
+            color: rgba(255, 255, 255, .8);
+            width: 250px;
+            margin-top: 30px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+                box-shadow: 0 5px 15px rgba(109, 180, 255, 0.4);
+            }
+        }
+    }
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: $black;
+}

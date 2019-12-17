@@ -1,0 +1,55 @@
+@import "fonts";
+@import "colors";
+@import "mixins";
+
+body {
+    background-color: $backgroundColorMain;
+    color: $lightText;
+}
+
+.container-fluid {
+    height: 95vh;
+    background-image: url(/assets/night-king-background2.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    text-align: center;
+
+    h1 {
+        padding-top: 100px;
+        color: $orange;
+        background: linear-gradient(to right, $orange 0%, $red 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: neonGlow 2s infinite alternate $easeInOutQuad;
+    }
+
+    h4 {
+        color: $lightGrey;
+        padding-top: 10px;
+    }
+
+    .lead {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .btn-lg {
+        color: rgba(255, 255, 255, .8);
+        width: 250px;
+        margin-top: 30px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+            box-shadow: 0 5px 15px rgba(109, 180, 255, 0.4);
+        }
+    }
+}
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: $black;
+}

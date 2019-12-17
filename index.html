@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GoT Board Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/public/main-stylesheet.css">
+    <script src="https://kit.fontawesome.com/6f910e69ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <!-- Credits to HBO's Game of Thrones Youtube Channel for the video at https://youtu.be/TZE9gVF1QbA -->
+        <video id="GotCredits" autoplay loop poster="https://dummyimage.com/900x400/000/fff" src="/assets/OpeningCredits_GameofThrones_Season8(HBO).mp4" type="video/mp4"></video>
+        <div class="container">
+            <img class="logo" src="/assets/GoT-logo.png" alt="Game of Thrones Logo">
+            <h1 class="display-4">The Quest to the Iron Throne</h1>
+            <p class="lead">Conquer the Land of Westeros and race your way to take your rightful place on the Iron Throne</p>
+            <p class="lead quote">“There is ice and there is fire. Hate and love. Bitter and sweet… Winter and summer. Evil and good." She took a step toward him. "Death and life. Everywhere, opposites. Everywhere, the war."</p>
+            <p class="lead author">- George R.R. Martin</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container-fluid characters">
+            <h2>CHOOSE YOUR CHARACTER</h2>
+            <!-- START POINT: This will be turned into a card carousel -->
+            <div class="row" id="charactersRow">
+                <!-- END POINT of card carousel -->
+            </div>
+            <div class="row justify-content-center">
+                <a class="btn btn-primary btn-lg glow-button" id="playnow">PLAY NOW</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <small>Copyright © 2019 • Bryan Luis Villafuerte • Semester Project</small>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+
+    <script src="scripts/storage.js" type="text/javascript"></script>
+    <script src="scripts/utils.js" type="text/javascript"></script>
+    <script src="scripts/index-script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import "fonts";
+@import "colors";
+@import "mixins";
+
+body {
+    background-color: $backgroundColorMain;
+}
+
+.nav {
+    background-color: $black;
+    color: $orange;
+
+    a {
+        color: $orange;
+    }
+}
+
+.container-fluid {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(/assets/background-westeros.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+        margin-bottom: 30px;
+        text-align: center;
+        color: $orange;
+        background: linear-gradient(to right, $orange 0%, $red 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: neonGlow 2s infinite alternate $easeInOutQuad;
+    }
+
+    #boardContainer1, #boardContainer2, #boardContainer3, #boardContainer4, #boardContainer5 {
+        display: flex;
+        justify-content: center;
+    
+        .board-tile {
+            position: relative;
+            width: 150px;
+            height: 100px;
+            background-color: $lightGrey;
+            background-image: url(/assets/tile-even.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        
+            h2 {
+                color: $lightText;
+                text-align: center;
+                line-height: 100px;
+            }
+
+            img {
+                position: absolute;
+                top: 8px;
+                left: 2.3rem;
+                width: 5rem;
+            }
+
+        }
+        
+        .board-tile-Odd {
+            width: 150px;
+            height: 100px;
+            background-color: $darkerGrey;
+            background-image: url(/assets/tile-odd.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #board-tile-5 {
+            background-image: url(/assets/trap01.png);
+        }
+
+        #board-tile-12 {
+            background-image: url(/assets/trap02.png);
+        }
+
+        #board-tile-15 {
+            background-image: url(/assets/trap03.png);
+        }
+
+        #board-tile-20 {
+            background-image: url(/assets/trap04.png);
+        }
+
+        #board-tile-27 {
+            background-image: url(/assets/trap05.png);
+        }
+
+        #board-tile-30 {
+            background-image: url(/assets/iron-throne-30.png);
+        }
+    }
+
+    #characterToken {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 100px;
+        }
+    }
+
+    #diceRoller {
+        margin-top: 50px;
+
+        .diceContainer {
+            width: 150px;
+            height: 150px;
+            color: $lightText;
+            background-color: $backgroundColorMain;
+            border: solid 5px $orange;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+
+            p {
+                font-size: 54px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 150px;
+            }
+        }
+
+        #diceAlert {
+            margin-top: 20px;
+            color: $orange;
+        }
+
+        .btn-lg {
+            color: rgba(255, 255, 255, .8);
+            width: 250px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: rgba(255, 255, 255, 1);
+                box-shadow: 0 5px 15px rgba(109, 180, 255, 0.4);
+            }
+        }
+    }
+}
+
+
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: $black;
+    color: $lightText;
+}

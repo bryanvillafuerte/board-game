@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Calistoga|Solway&display=swap");
+body {
+  font-family: "Solway", serif;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Calistoga", cursive;
+}
+
+@keyframes neonGlow {
+  0%, 100% {
+    text-shadow: 0 0 0.5vw #DC832E, 0 0 1.5vw #BF2424, 0 0 5vw #BF2424, 0 0 5vw #BF2424, 0 0 0.2vw #DC832E, 0.25vw 0.25vw 0.05vw #806914;
+    color: #DC832E;
+  }
+  50% {
+    text-shadow: 0 0 0.25vw #800E0B, 0 0 0.75vw #800E0B, 0 0 2.5vw #800E0B, 0 0 2.5vw #800E0B, 0 0 0.1vw #800E0B, 0.25vw 0.25vw 0.05vw #40340A;
+    color: #806914;
+  }
+}
+body {
+  background-color: #212529;
+}
+
+.nav {
+  background-color: #000000;
+  color: #DC832E;
+}
+.nav a {
+  color: #DC832E;
+}
+
+.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url(/assets/background-westeros.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-fluid h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #DC832E;
+  background: linear-gradient(to right, #DC832E 0%, #BF2424 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.container-fluid #boardContainer1, .container-fluid #boardContainer2, .container-fluid #boardContainer3, .container-fluid #boardContainer4, .container-fluid #boardContainer5 {
+  display: flex;
+  justify-content: center;
+}
+.container-fluid #boardContainer1 .board-tile, .container-fluid #boardContainer2 .board-tile, .container-fluid #boardContainer3 .board-tile, .container-fluid #boardContainer4 .board-tile, .container-fluid #boardContainer5 .board-tile {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background-color: #9F9FA6;
+  background-image: url(/assets/tile-even.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container-fluid #boardContainer1 .board-tile h2, .container-fluid #boardContainer2 .board-tile h2, .container-fluid #boardContainer3 .board-tile h2, .container-fluid #boardContainer4 .board-tile h2, .container-fluid #boardContainer5 .board-tile h2 {
+  color: #ffffff;
+  text-align: center;
+  line-height: 100px;
+}
+.container-fluid #boardContainer1 .board-tile img, .container-fluid #boardContainer2 .board-tile img, .container-fluid #boardContainer3 .board-tile img, .container-fluid #boardContainer4 .board-tile img, .container-fluid #boardContainer5 .board-tile img {
+  position: absolute;
+  top: 8px;
+  left: 2.3rem;
+  width: 5rem;
+}
+.container-fluid #boardContainer1 .board-tile-Odd, .container-fluid #boardContainer2 .board-tile-Odd, .container-fluid #boardContainer3 .board-tile-Odd, .container-fluid #boardContainer4 .board-tile-Odd, .container-fluid #boardContainer5 .board-tile-Odd {
+  width: 150px;
+  height: 100px;
+  background-color: #262626;
+  background-image: url(/assets/tile-odd.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container-fluid #boardContainer1 #board-tile-5, .container-fluid #boardContainer2 #board-tile-5, .container-fluid #boardContainer3 #board-tile-5, .container-fluid #boardContainer4 #board-tile-5, .container-fluid #boardContainer5 #board-tile-5 {
+  background-image: url(/assets/trap01.png);
+}
+.container-fluid #boardContainer1 #board-tile-12, .container-fluid #boardContainer2 #board-tile-12, .container-fluid #boardContainer3 #board-tile-12, .container-fluid #boardContainer4 #board-tile-12, .container-fluid #boardContainer5 #board-tile-12 {
+  background-image: url(/assets/trap02.png);
+}
+.container-fluid #boardContainer1 #board-tile-15, .container-fluid #boardContainer2 #board-tile-15, .container-fluid #boardContainer3 #board-tile-15, .container-fluid #boardContainer4 #board-tile-15, .container-fluid #boardContainer5 #board-tile-15 {
+  background-image: url(/assets/trap03.png);
+}
+.container-fluid #boardContainer1 #board-tile-20, .container-fluid #boardContainer2 #board-tile-20, .container-fluid #boardContainer3 #board-tile-20, .container-fluid #boardContainer4 #board-tile-20, .container-fluid #boardContainer5 #board-tile-20 {
+  background-image: url(/assets/trap04.png);
+}
+.container-fluid #boardContainer1 #board-tile-27, .container-fluid #boardContainer2 #board-tile-27, .container-fluid #boardContainer3 #board-tile-27, .container-fluid #boardContainer4 #board-tile-27, .container-fluid #boardContainer5 #board-tile-27 {
+  background-image: url(/assets/trap05.png);
+}
+.container-fluid #boardContainer1 #board-tile-30, .container-fluid #boardContainer2 #board-tile-30, .container-fluid #boardContainer3 #board-tile-30, .container-fluid #boardContainer4 #board-tile-30, .container-fluid #boardContainer5 #board-tile-30 {
+  background-image: url(/assets/iron-throne-30.png);
+}
+.container-fluid #characterToken {
+  display: flex;
+  align-items: center;
+}
+.container-fluid #characterToken img {
+  height: 100px;
+}
+.container-fluid #diceRoller {
+  margin-top: 50px;
+}
+.container-fluid #diceRoller .diceContainer {
+  width: 150px;
+  height: 150px;
+  color: #ffffff;
+  background-color: #212529;
+  border: solid 5px #DC832E;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.container-fluid #diceRoller .diceContainer p {
+  font-size: 54px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 150px;
+}
+.container-fluid #diceRoller #diceAlert {
+  margin-top: 20px;
+  color: #DC832E;
+}
+.container-fluid #diceRoller .btn-lg {
+  color: rgba(255, 255, 255, 0.8);
+  width: 250px;
+  transition: all 0.2s ease-in-out;
+}
+.container-fluid #diceRoller .btn-lg:hover {
+  color: white;
+  box-shadow: 0 5px 15px rgba(109, 180, 255, 0.4);
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=board-stylesheet.css.map */

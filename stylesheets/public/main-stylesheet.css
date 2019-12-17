@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Calistoga|Solway&display=swap");
+body {
+  font-family: "Solway", serif;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Calistoga", cursive;
+}
+
+@keyframes neonGlow {
+  0%, 100% {
+    text-shadow: 0 0 0.5vw #DC832E, 0 0 1.5vw #BF2424, 0 0 5vw #BF2424, 0 0 5vw #BF2424, 0 0 0.2vw #DC832E, 0.25vw 0.25vw 0.05vw #806914;
+    color: #DC832E;
+  }
+  50% {
+    text-shadow: 0 0 0.25vw #800E0B, 0 0 0.75vw #800E0B, 0 0 2.5vw #800E0B, 0 0 2.5vw #800E0B, 0 0 0.1vw #800E0B, 0.25vw 0.25vw 0.05vw #40340A;
+    color: #806914;
+  }
+}
+body {
+  background-color: #212529;
+  color: #ffffff;
+}
+
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  background-color: #000000;
+  height: auto;
+  margin-bottom: 0;
+}
+.jumbotron video {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity: 0.4;
+}
+.jumbotron .container {
+  z-index: 2;
+  position: relative;
+}
+.jumbotron .container h1 {
+  text-align: center;
+  color: #DC832E;
+  background: linear-gradient(to right, #DC832E 0%, #BF2424 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: neonGlow 2s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.jumbotron .container .lead {
+  text-align: center;
+}
+.jumbotron .container .quote {
+  font-style: italic;
+}
+.jumbotron .container .author {
+  text-align: right;
+}
+.jumbotron .container .logo {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.container-fluid {
+  background-color: #212529;
+  background-image: url(/assets/night-king-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.container-fluid .characters h2 {
+  color: #DC832E;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container-fluid .characters .col-md-3 {
+  margin-bottom: 30px;
+}
+.container-fluid .characters .card {
+  background-color: #212529;
+  border: 1px solid #2b353e;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px #303030;
+}
+.container-fluid .characters .card .card-img-top {
+  border-radius: 10px 10px 0px 0px;
+}
+.container-fluid .characters .card .card-title {
+  color: #DC832E;
+}
+.container-fluid .characters .card:hover {
+  cursor: pointer;
+}
+.container-fluid .characters .card:focus {
+  outline: none;
+  box-shadow: 0 0 3px 1px #fff, 0 0 6px 3px #BF2424, 0 0 9px 5px #DC832E;
+}
+.container-fluid .characters .btn-lg {
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+  width: 250px;
+  margin-top: 30px;
+  transition: all 0.2s ease-in-out;
+}
+.container-fluid .characters .btn-lg:hover {
+  color: white;
+  box-shadow: 0 5px 15px rgba(109, 180, 255, 0.4);
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #000000;
+}
+
+/*# sourceMappingURL=main-stylesheet.css.map */
